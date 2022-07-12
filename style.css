@@ -1,0 +1,145 @@
+*,*::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: inherit;
+    
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Roboto', sans-serif;
+    font-size: 1.6rem;
+    background: linear-gradient(to bottom, #f39e49, #ffbcbc); 
+    background-attachment: fixed;
+    min-width: 35rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+li{
+    list-style: none;
+    text-decoration: none;  
+}
+header{
+    text-align: center;
+    padding: 2rem 0;
+}
+header h1 {
+    color: rgb(255, 255, 255);
+    font-size: 3.8rem;
+}
+/* tech */
+.button {
+    text-decoration: none;
+    background-color: none;
+    border: none;
+    cursor: pointer;
+    padding: .8rem;
+    background-color: rgb(38, 77, 145);
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem;
+    border-radius: none;
+}
+
+.button:hover{
+    background-color: rgb(76, 101, 144);
+}
+
+
+
+.app{
+    max-width: 60rem;
+    margin: 0 auto;
+}
+.app form{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-bottom: 2rem;
+}
+.app input {
+    
+    outline: none;
+    font-size: 2rem;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(46, 46, 46);
+    flex-grow: 1;
+    padding: .8rem .5rem;
+    text-transform: uppercase;
+}
+
+.app input::placeholder{
+    color: rgb(47, 47, 47);
+    opacity: .4;
+}
+
+.list-container{
+    background-color: #dbdad9;
+    padding: 2rem;
+    margin: 0 auto;
+    
+    max-width: 60rem;
+}
+
+.list-container .titulo-button{
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.list-container .titulo-button h2{
+    color: rgb(73, 73, 73);
+    font-weight: bold;
+}
+
+.div-todo {
+    display: flex;
+    justify-content: space-between;
+    background-color: azure;
+    margin-bottom: .5rem;
+    transition:all ease .5s;
+}
+
+.div-todo li {
+    flex-grow: 1;
+    text-align: start;
+    padding: .5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: rgb(76, 74, 74) ;
+    text-transform: uppercase;
+    
+}
+
+.cerrar{
+    background-color: rgba(255, 0, 0, 0.558);
+    padding: 1rem;
+}
+
+.completada{
+    background-color: rgba(0, 128, 0, 0.661);
+    padding: 1rem;
+}
+
+.markarcompletada {
+    opacity: .5;
+    text-decoration-line: line-through;
+    text-decoration-thickness: .3rem;
+}
+
+.borrarTarea{
+    transform: translateY( 20rem) rotateZ(30deg);
+    opacity: 0;
+}
